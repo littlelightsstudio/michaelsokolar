@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Sokolar — Author & Brand Film Director</title>
+  <meta name="description" content="Michael Sokolar — author of The Helena Flinn Chronicles and CEO of Little Lights Studio, a Vienna-based brand film agency. Middle-grade fantasy novelist by night, brand film director by day.">
+  <meta name="keywords" content="Michael Sokolar, Helena Flinn Chronicles, middle grade fantasy author, Little Lights Studio, Vienna author, brand film director, children's fantasy books, miso sokolar">
+  <meta name="author" content="Michael Sokolar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://michaelsokolar.com/">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Michael Sokolar">
+  <meta property="og:title" content="Michael Sokolar — Author & Brand Film Director">
+  <meta property="og:description" content="Author of The Helena Flinn Chronicles and CEO of Little Lights Studio, Vienna. Middle-grade fantasy novelist by night, brand film director by day.">
+  <meta property="og:url" content="https://michaelsokolar.com/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Michael Sokolar — Author & Brand Film Director">
+  <meta name="twitter:description" content="Middle-grade fantasy author. Brand film director. Vienna.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Michael Sokolar","url":"https://michaelsokolar.com","image":"https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg","sameAs":["https://helenaflinn.com","https://littlelights.studio","https://www.goodreads.com/book/show/220969289","https://www.instagram.com/michael_sokolar_author/","https://www.facebook.com/michaelsokolar.author/","https://www.linkedin.com/in/michaelsokolar/"],"jobTitle":"Author & CEO","worksFor":{"@type":"Organization","name":"Little Lights Studio GmbH","url":"https://littlelights.studio"},"address":{"@type":"PostalAddress","addressLocality":"Vienna","addressCountry":"AT"}}
+  </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #ffffff;
+  --off: #f8f8f7;
+  --near-black: #111111;
+  --mid: #555555;
+  --light: #aaaaaa;
+  --rule: #e8e8e8;
+  --accent: #1a7a8a;
+  --accent-pale: #f0f8fa;
+  --accent-mid: #155f6d;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Outfit', sans-serif;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--near-black);
+  overflow-x: hidden;
+}
+
+/* ── DRAWING RULE — cherry on top ── */
+.page-rule {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--accent);
+  z-index: 200;
+  animation: drawRule 1.1s 0.1s var(--ease) forwards;
+}
+@keyframes drawRule {
+  from { width: 0; opacity: 1; }
+  to   { width: 100%; opacity: 1; }
+}
+
+/* ── NAV ── */
+nav {
+  padding: 1.75rem 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s var(--ease);
+}
+nav.scrolled { border-bottom-color: var(--rule); }
+.nav-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  color: var(--near-black);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.nav-links a {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--light);
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.25s var(--ease);
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s var(--ease);
+}
+.nav-links a:hover { color: var(--near-black); }
+.nav-links a:hover::after { width: 100%; }
+
+/* ── HERO ── */
+.hero {
+  padding: 7rem 6vw 6rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--rule);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-watermark {
+  position: absolute;
+  right: -3vw;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-family: var(--font-display);
+  font-size: clamp(7rem, 15vw, 17rem);
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(0,0,0,0.025);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  animation: fadeWatermark 2s 0.5s ease both;
+}
+@keyframes fadeWatermark {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 5rem;
+  align-items: end;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeUp 0.7s ease both;
+}
+.hero-eyebrow::after {
+  content: '';
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  animation: growLine 0.6s 0.7s var(--ease) forwards;
+}
+@keyframes growLine {
+  to { width: 36px; }
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6.5vw, 6.5rem);
+  font-weight: 300;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  color: var(--near-black);
+  margin-bottom: 0;
+  animation: fadeUp 0.7s 0.08s ease both;
+}
+.hero-title .italic {
+  font-style: italic;
+}
+.hero-title .accent-word {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* Goblins line — the punchline, breathing separately */
+.hero-goblins {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.6vw, 1.3rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--light);
+  margin-top: 2rem;
+  letter-spacing: 0.01em;
+  animation: fadeUp 0.7s 0.18s ease both;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.75rem;
+  animation: fadeUp 0.7s 0.26s ease both;
+}
+.btn-accent {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--accent);
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  transition: background 0.25s, transform 0.2s;
+  display: inline-block;
+}
+.btn-accent:hover {
+  background: var(--near-black);
+  transform: translateY(-2px);
+}
+.btn-ghost {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--light);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+.btn-ghost::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--near-black);
+  transition: width 0.3s var(--ease);
+}
+.btn-ghost:hover { color: var(--near-black); }
+.btn-ghost:hover::after { width: 100%; }
+
+/* Stats */
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+  animation: fadeUp 0.7s 0.16s ease both;
+}
+.stat {
+  text-align: right;
+  padding-right: 1.25rem;
+  border-right: 2px solid var(--accent);
+}
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--near-black);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.stat-label {
+  font-family: var(--font-body);
+  font-size: 0.56rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-top: 0.4rem;
+  line-height: 1.45;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── SECTION SHARED ── */
+.section-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.section-eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.4s, transform 0.4s;
+}
+.reveal.visible .section-eyebrow::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 300;
+  color: var(--near-black);
+  line-height: 1.1;
+}
+
+/* ── WHAT I DO ── */
+.what-i-do {
+  padding: 6rem 6vw;
+  background: var(--off);
+}
+.what-header {
+  max-width: 1100px;
+  margin: 0 auto 3.5rem;
+}
+
+/* Author block */
+.author-block {
+  max-width: 1100px;
+  margin: 0 auto 2px;
+  background: var(--white);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: start;
+  border-left: 3px solid var(--rule);
+  transition: border-left-color 0.3s var(--ease);
+}
+.author-block:hover { border-left-color: var(--accent); }
+.block-tag {
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.author-block h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+  font-weight: 400;
+  color: var(--near-black);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.author-block p {
+  font-size: 0.93rem;
+  font-weight: 300;
+  line-height: 1.78;
+  color: var(--mid);
+  max-width: 500px;
+  margin-bottom: 1.75rem;
+}
+.book-covers {
+  display: flex;
+  gap: 1.5rem;
+  flex-shrink: 0;
+  align-items: flex-end;
+}
+.book-thumb {
+  width: 120px;
+  position: relative;
+  background: transparent;
+  flex-shrink: 0;
+}
+.book-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  border-radius: 2px;
+  transition: transform 0.3s var(--ease);
+}
+.book-thumb:hover img { transform: translateY(-4px); }
+.book-thumb-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  color: var(--light);
+  font-family: var(--font-body);
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  background: #ececec;
+}
+.block-link {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--near-black);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.block-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s var(--ease);
+}
+.block-link:hover::after { width: 100%; }
+
+/* Little Lights block — clean light with logo */
+.studio-block {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2.25rem 3rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 3rem;
+  align-items: center;
+  border-left: 3px solid var(--rule);
+  transition: border-left-color 0.3s var(--ease);
+  position: relative;
+}
+.studio-block:hover { border-left-color: var(--near-black); }
+
+.studio-logo {
+  width: 140px;
+  flex-shrink: 0;
+}
+.studio-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.studio-text {}
+.studio-tag {
+  font-family: var(--font-body);
+  font-size: 0.56rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 0.6rem;
+}
+.studio-block h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  font-weight: 400;
+  color: var(--near-black);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+.studio-block p {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--mid);
+}
+.studio-link {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light);
+  text-decoration: none;
+  flex-shrink: 0;
+  position: relative;
+  transition: color 0.2s;
+}
+.studio-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--near-black);
+  transition: width 0.3s var(--ease);
+}
+.studio-link:hover { color: var(--near-black); }
+.studio-link:hover::after { width: 100%; }
+
+/* ── REVIEWS ── */
+.reviews {
+  padding: 6rem 6vw;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.reviews-inner { max-width: 1100px; margin: 0 auto; }
+
+/* Two-beat reveal: border first, then text */
+.review-lead-wrap {
+  margin: 2.5rem 0 0.9rem;
+  padding-left: 1.5rem;
+  border-left: 0px solid var(--accent);
+  transition: border-left-width 0.5s 0.3s var(--ease);
+}
+.review-lead-wrap.visible { border-left-width: 2px; }
+
+.review-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.2vw, 1.75rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--near-black);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s 0.55s ease, transform 0.5s 0.55s var(--ease);
+}
+.review-lead-wrap.visible .review-lead {
+  opacity: 1;
+  transform: translateY(0);
+}
+.review-source {
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-left: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s 0.8s ease;
+}
+.reviews-inner.visible .review-source { opacity: 1; }
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3.5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--rule);
+}
+.mini-review {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s var(--ease);
+}
+.mini-review:nth-child(1) { transition-delay: 0.1s; }
+.mini-review:nth-child(2) { transition-delay: 0.2s; }
+.mini-review:nth-child(3) { transition-delay: 0.3s; }
+.reviews-inner.visible .mini-review { opacity: 1; transform: translateY(0); }
+
+.mini-quote {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--mid);
+  margin-bottom: 0.85rem;
+}
+.mini-attr {
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+/* ── ABOUT ── */
+.about {
+  padding: 6rem 6vw;
+  background: var(--off);
+}
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.about-photo-wrap {
+  position: sticky;
+  top: 7rem;
+}
+.about-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--rule);
+  border: 2px solid var(--rule);
+  transition: border-color 0.3s;
+}
+.about-photo:hover { border-color: var(--accent); }
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-photo-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--light);
+}
+.about-content {}
+.about-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 300;
+  color: var(--near-black);
+  margin-bottom: 0.3rem;
+  line-height: 1.1;
+}
+.about-name em { font-style: italic; color: var(--accent); }
+.about-role {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 2rem;
+}
+.about-text {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--mid);
+  margin-bottom: 1.1rem;
+}
+/* The by day / by night echo */
+.about-text .echo {
+  color: var(--near-black);
+  font-weight: 400;
+}
+
+
+/* ── CONTACT & NEWSLETTER ── */
+#contact{padding:6rem 6vw;background:var(--off);border-top:1px solid var(--rule)}
+.contact-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem}
+.contact-block .section-eyebrow{margin-bottom:0.5rem}
+.contact-block h3{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:300;color:var(--near-black);margin-bottom:1rem;line-height:1.2}
+.contact-block p{font-size:0.92rem;font-weight:300;line-height:1.8;color:var(--mid);margin-bottom:1.75rem}
+.form-group{margin-bottom:1.1rem}
+.form-group label{display:block;font-family:var(--font-body);font-size:0.56rem;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;color:var(--light);margin-bottom:0.45rem}
+.form-group input,.form-group textarea,.form-group select{width:100%;font-family:var(--font-body);font-size:0.9rem;font-weight:300;color:var(--near-black);background:var(--white);border:1px solid var(--rule);border-bottom:1px solid rgba(0,0,0,0.2);padding:0.7rem 0.85rem;transition:border-color 0.2s;outline:none}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--accent)}
+.form-group textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.btn-submit-ms{font-family:var(--font-body);font-size:0.68rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);background:var(--accent);border:none;padding:0.85rem 2.2rem;cursor:pointer;transition:all 0.25s;width:100%;margin-top:0.5rem}
+.btn-submit-ms:hover{background:var(--near-black);transform:translateY(-1px)}
+.form-success-ms{display:none;font-size:0.88rem;font-style:italic;color:var(--accent);margin-top:1rem;font-family:var(--font-display)}
+/* Newsletter */
+.nl-form-ms{display:flex;gap:0;margin-top:1.25rem}
+.nl-input-ms{flex:1;font-family:var(--font-body);font-size:0.9rem;font-weight:300;color:var(--near-black);background:var(--white);border:1px solid var(--rule);border-right:none;padding:0.7rem 0.85rem;outline:none;transition:border-color 0.2s}
+.nl-input-ms:focus{border-color:var(--accent)}
+.nl-btn-ms{font-family:var(--font-body);font-size:0.62rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);background:var(--accent);border:none;padding:0.7rem 1.4rem;cursor:pointer;transition:background 0.2s;white-space:nowrap;flex-shrink:0}
+.nl-btn-ms:hover{background:var(--near-black)}
+.nl-note-ms{font-size:0.75rem;font-weight:300;color:var(--light);margin-top:0.65rem;font-style:italic}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr;gap:3.5rem}.form-row{grid-template-columns:1fr}.press-grid{grid-template-columns:1fr!important;gap:3rem}}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--near-black);
+  padding: 2.25rem 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+.footer-right {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+.footer-right a { transition: color 0.2s; }
+.footer-right a:hover { color: var(--white); }
+.footer-social {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.footer-social a {
+  color: rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.footer-social a:hover { color: var(--white); }
+@media(max-width:600px){
+  footer { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 2rem 6vw; }
+  .footer-right { order: 3; }
+  .footer-social { order: 2; }
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s var(--ease);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 800px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-stats {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-top: 2.5rem;
+  }
+  .stat { text-align: left; border-right: none; border-left: 2px solid var(--accent); padding-right: 0; padding-left: 1rem; }
+  .author-block { grid-template-columns: 1fr; }
+  .book-covers { flex-wrap: wrap; gap: 1rem; justify-content: flex-start; }
+  .book-thumb { width: 90px; }
+  .studio-block { grid-template-columns: 1fr; gap: 1.5rem; }
+  .studio-link { margin-top: 0.5rem; }
+  .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-photo-wrap { position: static; }
+  .review-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .nav-links { display: none; }
+}
+</style>
+<!-- MailerLite -->
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+<script>function ml_webform_success_38657284(){var $=ml_jQuery||jQuery;$('.ml-subscribe-form-38657284 .row-success').show();$('.ml-subscribe-form-38657284 .row-form').hide();}</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D24SE8KFXH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D24SE8KFXH', { anonymize_ip: true });
+</script>
+</head>
+<body>
+
+<div class="page-rule"></div>
+
+<nav id="main-nav">
+  <a href="#" class="nav-name">Michael Sokolar</a>
+  <ul class="nav-links">
+    <li><a href="#what">Books</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#studio">Little Lights</a></li>
+    <li><a href="#press">Press</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-watermark">Storyteller</div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Vienna, Austria</p>
+      <h1 class="hero-title">
+        I'm <span class="italic">miso.</span><br>
+        Brand film studio<br>
+        by day.<br>
+        <span class="accent-word">Fantasy</span><br>
+        novelist by night.
+      </h1>
+      <p class="hero-goblins">Both involve goblins, more or less.</p>
+      <div class="hero-cta">
+        <a href="#what" class="btn-accent">The Books</a>
+        <a href="https://mybook.to/helena-flinn-chronicle" target="_blank" class="btn-ghost">Get the Books</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" id="stat-directing">—</div>
+        <div class="stat-label">Years writing<br>& directing</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="stat-studio">—</div>
+        <div class="stat-label">Years<br>Little Lights</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Books<br>published</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHAT I DO ── -->
+<section class="what-i-do" id="what">
+  <div class="what-header reveal">
+    <p class="section-eyebrow">What I Do</p>
+    <h2 class="section-title">Two vocations.<br>One through-line.</h2>
+  </div>
+
+  <!-- Author block — dominant -->
+  <div class="author-block reveal reveal-d1">
+    <div>
+      <p class="block-tag">Author</p>
+      <h3>The Helena Flinn Chronicles</h3>
+      <p>A middle-grade fantasy trilogy set beneath Vienna, where goblins engineer dreams and one girl discovers she can do something no human has done before. Two books published. The third arrives in 2026.</p>
+      <a href="https://mybook.to/helena-flinn-chronicle" target="_blank" class="block-link">Get the books →</a>
+      <p style="font-size:0.72rem;font-weight:300;letter-spacing:0.08em;color:var(--light);margin-top:0.75rem">The world beneath Vienna has its own address. Coming soon.</p>
+    </div>
+    <div class="book-covers">
+      <div class="book-thumb">
+        <img src="https://raw.githubusercontent.com/littlelightsstudio/helenaflinn/main/images/books/hf1/hf1-ebook-cover.jpg" alt="Helena Flinn Book 1" loading="lazy">
+      </div>
+      <div class="book-thumb">
+        <img src="https://raw.githubusercontent.com/littlelightsstudio/helenaflinn/main/images/books/hf2/hf2-ebook-cover.jpg" alt="Helena Flinn Book 2" loading="lazy">
+      </div>
+      <div class="book-thumb">
+        <div class="book-thumb-ph">Book 3<br>2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Little Lights block — dark, with logo -->
+  <div class="studio-block reveal reveal-d2" id="studio">
+    <div class="studio-logo">
+      <img src="https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/brand/little-lights-studio-logo-full-blue.png" alt="Little Lights Studio" loading="lazy">
+    </div>
+    <div class="studio-text">
+      <p class="studio-tag">CEO & Creative Director</p>
+      <h3>Little Lights Studio</h3>
+      <p>A Vienna-based brand film agency with eleven years of experience. We make films for companies that understand the difference between content and a story worth telling.</p>
+    </div>
+    <a href="https://littlelights.studio" class="studio-link">littlelights.studio →</a>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="reviews" id="reviews">
+  <div class="reviews-inner">
+    <p class="section-eyebrow reveal">What Readers Say</p>
+    <div class="review-lead-wrap">
+      <blockquote class="review-lead">"A wholly original work of middle grade fantasy. Evocative language, clever world-building, and a captivating plot that readers of all ages will find enchanting."</blockquote>
+    </div>
+    <p class="review-source">The Independent Review of Books — Book 1</p>
+
+    <div class="review-grid">
+      <div class="mini-review">
+        <p class="mini-quote">"An enchanting blend of science, goblins, and dream magic that kids will love."</p>
+        <p class="mini-attr">Matthew Olson-Roy — Teacher Librarian & Author</p>
+      </div>
+      <div class="mini-review">
+        <p class="mini-quote">"The kind of book that makes you fall in love with reading all over again."</p>
+        <p class="mini-attr">Mike Kren — Director & Screenwriter</p>
+      </div>
+      <div class="mini-review">
+        <p class="mini-quote">"Jaw-dropping ending — leaves you with lots of questions and keen for what comes next."</p>
+        <p class="mini-attr">LoveReading 4 Kids — Book 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-photo-wrap">
+      <div class="about-photo">
+        <img src="https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg" alt="Michael Sokolar" loading="lazy">
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <h2 class="about-name">Michael <em>Sokolar</em></h2>
+      <p class="about-role">Author · CEO · Vienna</p>
+      <p class="about-text">
+        I live just outside Vienna with my wife and two daughters.
+        <span class="echo">By day</span> I run Little Lights Studio, a brand film agency with eleven years of experience making films for companies with something real to say.
+        <span class="echo">By night</span> I write middle-grade fantasy.
+      </p>
+      <p class="about-text">
+        The Helena Flinn Chronicles began as a short story about goblin dream engineers manufacturing dreams in a lab. The goblins came first. Then the city beneath Vienna. Then Helena. The world grew around them over years of writing.
+      </p>
+      <a href="#" class="block-link">Full story & press →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS & AUTHOR VISITS -->
+<section id="press" style="padding:6rem 6vw;border-top:1px solid var(--rule)">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem" class="press-grid">
+    <div class="reveal">
+      <p class="section-eyebrow">Press & Media</p>
+      <h2 class="section-title" style="margin-bottom:1.5rem">Press kit &<br>media enquiries.</h2>
+      <p style="font-size:0.92rem;font-weight:300;line-height:1.8;color:var(--mid);margin-bottom:1.75rem">For interviews, features, and review copies. A full press kit including cover images, author bio, and series overview is available for download.</p>
+      <a href="https://tinyurl.com/helena-flinn-media" target="_blank" class="block-link" style="display:inline-block;margin-bottom:2.5rem">Download press kit →</a>
+      <div style="padding-top:2rem;border-top:1px solid var(--rule)">
+        <p style="font-family:var(--font-body);font-size:0.56rem;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;color:var(--light);margin-bottom:0.75rem">Editorial Review</p>
+        <p style="font-family:var(--font-display);font-size:0.95rem;font-style:italic;font-weight:300;line-height:1.65;color:var(--mid);margin-bottom:0.5rem">&ldquo;A wholly original work of middle grade fantasy. Evocative language, clever world-building, and a captivating plot that readers of all ages will find enchanting.&rdquo;</p>
+        <p style="font-size:0.58rem;font-weight:300;letter-spacing:0.18em;text-transform:uppercase;color:var(--light)">The Independent Review of Books</p>
+      </div>
+    </div>
+    <div class="reveal reveal-d1">
+      <p class="section-eyebrow">Author Visits</p>
+      <h2 class="section-title" style="margin-bottom:1.5rem">School &<br>library visits.</h2>
+      <p style="font-size:0.92rem;font-weight:300;line-height:1.8;color:var(--mid);margin-bottom:1rem">Michael is available for author visits at schools and libraries in <strong style="color:var(--near-black);font-weight:400">Austria and Germany</strong>. Sessions are suitable for ages 9&ndash;13 and can be tailored to the group.</p>
+      <p style="font-size:0.92rem;font-weight:300;line-height:1.8;color:var(--mid);margin-bottom:1.75rem">Typical formats include a reading, a short talk about the world-building process, and a Q&amp;A. Remote sessions via video call are available worldwide for English-speaking schools and libraries.</p>
+      <a href="#contact" class="block-link">Request a visit →</a>
+    </div>
+  </div>
+</section>
+<!-- CONTACT & NEWSLETTER -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-block reveal">
+      <p class="section-eyebrow">Newsletter</p>
+      <h3>Updates from<br>both worlds.</h3>
+      <p>Book news, behind-the-scenes writing updates, and occasional dispatches from Vinaborg. No noise.</p>
+      <div id="mlb2-38657284" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38657284">
+        <div class="ml-form-embedWrapper embedForm">
+          <div class="ml-form-embedBody row-form">
+            <form class="ml-block-form nl-form-ms" action="https://assets.mailerlite.com/jsonp/955336/forms/182296130877392293/subscribe" data-code="" method="post" target="_blank" style="display:flex;width:100%">
+              <input class="nl-input-ms" aria-label="email" type="email" name="fields[email]" placeholder="your@email.com" autocomplete="email" required>
+              <button class="nl-btn-ms" type="submit">Subscribe</button>
+              <input type="hidden" name="ml-submit" value="1">
+              <input type="hidden" name="anticsrf" value="true">
+            </form>
+          </div>
+          <div class="ml-form-successBody row-success" style="display:none">
+            <p class="nl-note-ms" style="color:var(--accent)">You're in. Welcome to the nocturnal world.</p>
+          </div>
+        </div>
+      </div>
+      <p class="nl-note-ms">No spam. Unsubscribe any time.</p>
+    </div>
+
+    <div class="contact-block reveal reveal-d1">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h3>Press. Author visits.<br>Brand films.</h3>
+      <p>For press and media enquiries, school or library visit requests in Austria and Germany, or brand film briefs for Little Lights Studio — use this form. Michael reads every message.</p>
+      <form id="ms-contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a9105a56-f173-4fa5-b3b5-08534f6fbc08">
+        <input type="hidden" name="subject" value="Message from michaelsokolar.com">
+        <input type="hidden" name="from_name" value="michaelsokolar.com">
+        <input type="hidden" name="redirect" value="false">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select name="enquiry_type">
+            <option value="General">General</option>
+            <option value="Press & Media">Press & Media</option>
+            <option value="Author Visit (School/Library)">Author Visit — School or Library</option>
+            <option value="Little Lights">Little Lights — Brand Film Brief</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" required placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit-ms">Send Message</button>
+        <div class="form-success-ms" id="ms-success">Thank you — message received. I'll be in touch.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-name">Michael Sokolar</div>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/michael_sokolar_author/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+    </a>
+    <a href="https://www.facebook.com/michaelsokolar.author/" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/michaelsokolar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+  </div>
+  <div class="footer-right">
+    © <span id="footer-year"></span> · Vienna, Austria ·
+    <a href="/imprint.html" style="color:inherit;text-decoration:none">Imprint</a> ·
+    <a href="/privacy.html" style="color:inherit;text-decoration:none">Privacy</a>
+  </div>
+</footer>
+
+<script>
+// Dynamic stats
+const now = new Date().getFullYear();
+document.getElementById('stat-directing').textContent = now - 2005;
+document.getElementById('stat-studio').textContent = now - 2014;
+document.getElementById('footer-year').textContent = now;
+
+// Nav scroll border
+window.addEventListener('scroll', () => {
+  document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const reviewsInner = document.querySelector('.reviews-inner');
+const reviewLeadWrap = document.querySelector('.review-lead-wrap');
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+revealEls.forEach(el => obs.observe(el));
+if (reviewsInner) obs.observe(reviewsInner);
+if (reviewLeadWrap) obs.observe(reviewLeadWrap);
+
+// Contact form
+const msForm = document.getElementById('ms-contact-form');
+if(msForm) {
+  msForm.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = msForm.querySelector('.btn-submit-ms');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {method:'POST', body: new FormData(msForm)});
+      const json = await res.json();
+      if(json.success) {
+        msForm.style.display = 'none';
+        document.getElementById('ms-success').style.display = 'block';
+      } else {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+      }
+    } catch(err) {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    }
+  });
+}
+
+</script>
+</body>
+</html>
