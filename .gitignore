@@ -1,0 +1,9 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Local-only assets (not used on site)
+downloads/
+
+# Node (future-proofing if a build step lands)
+node_modules/
