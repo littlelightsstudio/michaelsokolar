@@ -162,6 +162,33 @@ p + p { margin-top: 10px; }
 .fine { font-size: 0.78rem; color: var(--light); margin-top: 10px; }
 .nl-success { margin-top: 18px; padding: 13px 14px; border: 1px solid var(--accent); color: var(--accent); background: var(--accent-pale); }
 
+/* ARC-Bewerbung (aufklappbar im Newsletter-Bereich) */
+.arc { margin-top: 30px; border: 1px solid var(--accent); border-radius: 4px; background: var(--accent-pale); scroll-margin-top: 16px; }
+.arc summary { list-style: none; cursor: pointer; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline; }
+.arc summary::-webkit-details-marker { display: none; }
+.arc summary .t { flex: 1; font-family: var(--serif); font-size: 1.15rem; color: var(--ink); }
+.arc summary .t small { display: block; font-family: var(--sans); font-size: 0.85rem; color: var(--mid); margin-top: 3px; }
+.arc summary::after { content: '+'; font-size: 1.3rem; color: var(--accent); line-height: 1; }
+.arc[open] summary::after { content: '\2212'; }
+.arc-body { padding: 0 18px 20px; }
+.arc-body .body { font-size: 0.95rem; margin-bottom: 14px; }
+.arc label.f { display: block; font-size: 0.64rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mid); margin: 16px 0 7px; }
+.arc label.f .opt { text-transform: none; letter-spacing: 0; font-style: italic; color: var(--light); }
+.arc input[type=text], .arc input[type=email] { width: 100%; border: 1px solid var(--ink); background: var(--white); padding: 11px 12px; font: inherit; font-size: 0.95rem; border-radius: 0; }
+.arc input[type=text]:focus, .arc input[type=email]:focus { outline: none; border-color: var(--accent); }
+.arc fieldset { border: 0; }
+.arc .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.arc .chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.arc .chip span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); background: var(--white); border-radius: 999px; font-size: 0.88rem; color: var(--mid); cursor: pointer; }
+.arc .chip input:checked + span { border-color: var(--accent); color: var(--white); background: var(--accent); }
+.arc .chip input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.arc .pledge { display: flex; gap: 9px; align-items: flex-start; margin: 18px 0 6px; font-size: 0.95rem; cursor: pointer; }
+.arc .pledge input { margin-top: 4px; accent-color: var(--accent); }
+.arc button[type=submit] { margin-top: 14px; width: 100%; border: 0; background: var(--ink); color: var(--white); font: inherit; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 14px 18px; cursor: pointer; }
+.arc button[type=submit]:hover { background: var(--accent); }
+.arc-ok p { color: var(--ink); font-size: 0.95rem; margin-bottom: 10px; }
+.arc-ok .go { display: inline-block; margin: 4px 0 12px; background: var(--accent); color: var(--white); padding: 11px 16px; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; }
+
 /* Bild neben Text */
 .media { display: grid; grid-template-columns: 1fr 96px; gap: 20px; align-items: start; }
 .media img { width: 96px; height: 96px; object-fit: cover; border-radius: 4px; }
@@ -220,6 +247,7 @@ footer a { color: var(--light); }
     </div>
   </div>
   <ul class="links">
+    <li><a href="#arc"><span class="label">Read it before release</span> <span class="meta">ARC team</span></a></li>
     <li><a href="#newsletter"><span class="label">Get told the day it is out</span> <span class="meta">newsletter</span></a></li>
     <li><a href="https://mybook.to/helena-flinn-chronicle"><span class="label">Catch up on Books 1 and 2</span> <span class="meta">series page</span></a></li>
   </ul>
@@ -254,6 +282,7 @@ footer a { color: var(--light); }
   <p class="eyebrow">Newsletter</p>
   <h2><em>The Author Newsletter</em></h2>
   <p class="body">Michael Sokolar's author newsletter. A letter from my desk: how the books get made, what I'm reading, news on Helena Flinn and what comes next.</p>
+  <p class="body" style="margin-top:10px">Do you review books? I'm looking for advance readers for Book 3. <a href="#arc" style="color:var(--accent)">Apply for the ARC team below.</a></p>
   <div id="mlb2-38657284" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38657284">
     <div class="ml-form-embedWrapper embedForm">
       <div class="ml-form-embedBody row-form" id="nl-ms-form">
@@ -269,6 +298,52 @@ footer a { color: var(--light); }
     </div>
   </div>
   <p class="fine">No spam. Unsubscribe any time.</p>
+
+  <details class="arc" id="arc">
+    <summary><span class="t">Read Book 3 before anyone else<small>Join the ARC team: an early eBook copy for an honest review in launch week.</small></span></summary>
+    <div class="arc-body">
+      <div id="arc-ms-form">
+        <p class="body">You get Book 3 as an eBook before it is released, plus Books 1 and 2 for free. I ask for an honest review in launch week, wherever you usually review. Glowing, mixed or critical, every honest review helps.</p>
+        <form action="https://helenaflinn.com/api/arc" method="post" data-subscribe data-endpoint="arc" data-hide="#arc-ms-form" data-success="#arc-ms-ok" data-error-class="fine">
+          <input type="hidden" name="source" value="links">
+          <label class="f" for="arc-name">Your name</label>
+          <input id="arc-name" type="text" name="name" autocomplete="name" maxlength="100" required>
+          <label class="f" for="arc-email">Your email</label>
+          <input id="arc-email" type="email" name="fields[email]" autocomplete="email" placeholder="your@email.com" required>
+          <fieldset>
+            <label class="f">Where do you review? <span class="opt">Tick all that apply.</span></label>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="platforms" value="Amazon"><span>Amazon</span></label>
+              <label class="chip"><input type="checkbox" name="platforms" value="Goodreads"><span>Goodreads</span></label>
+              <label class="chip"><input type="checkbox" name="platforms" value="Instagram"><span>Instagram</span></label>
+              <label class="chip"><input type="checkbox" name="platforms" value="TikTok"><span>TikTok</span></label>
+              <label class="chip"><input type="checkbox" name="platforms" value="Blog"><span>Blog</span></label>
+              <label class="chip"><input type="checkbox" name="platforms" value="Other"><span>Other</span></label>
+            </div>
+          </fieldset>
+          <label class="f" for="arc-link">Link to your reviewer profile <span class="opt">Optional.</span></label>
+          <input id="arc-link" type="text" inputmode="url" name="profile_link" maxlength="300" placeholder="goodreads.com/your-profile">
+          <fieldset>
+            <label class="f">Have you read Books 1 and 2?</label>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="read_books" value="Both" required><span>Both</span></label>
+              <label class="chip"><input type="radio" name="read_books" value="Book 1 only"><span>Book 1 only</span></label>
+              <label class="chip"><input type="radio" name="read_books" value="Not yet"><span>Not yet</span></label>
+            </div>
+          </fieldset>
+          <label class="pledge"><input type="checkbox" name="pledge" value="yes" required> <span>I'll post an honest review in launch week.</span></label>
+          <p class="fine">ARC readers also get my author newsletter, so you hear when the copies are ready. I'll send a confirmation email first. You can unsubscribe at any time. Details in the <a href="../privacy.html" style="color:var(--light)">privacy policy</a>.</p>
+          <button type="submit">Send my application</button>
+        </form>
+      </div>
+      <div class="arc-ok" id="arc-ms-ok" style="display:none">
+        <p><strong>Thank you, your application is in.</strong> One small step first: please check your inbox and confirm your email address.</p>
+        <p>As an ARC reader you get Books 1 and 2 for free:</p>
+        <a class="go" href="https://dl.bookfunnel.com/kyceunso4h" target="_blank" rel="noopener">Get Books 1 and 2</a>
+        <p>The advance copy of Book 3 follows once the line edit is done. I'll write to you as soon as it's ready.</p>
+      </div>
+    </div>
+  </details>
 </section>
 
 <section id="world">
@@ -341,6 +416,13 @@ footer a { color: var(--light); }
   </div>
 </footer>
 
+<script>
+// #arc im Link (Social Posts) öffnet die ARC-Bewerbung
+(function () {
+  function openArc() { if (location.hash === '#arc') { var d = document.getElementById('arc'); d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }) } }
+  window.addEventListener('hashchange', openArc); openArc()
+})()
+</script>
 <script src="https://helenaflinn.com/subscribe-form.js" defer></script>
 </body>
 </html>
