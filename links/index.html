@@ -417,10 +417,22 @@ footer a { color: var(--light); }
 </footer>
 
 <script>
-// #arc im Link (Social Posts) öffnet die ARC-Bewerbung
+// ARC-Bewerbung öffnen: über /links#arc (Social Posts) und bei jedem Klick auf einen ARC-Link
 (function () {
-  function openArc() { if (location.hash === '#arc') { var d = document.getElementById('arc'); d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }) } }
-  window.addEventListener('hashchange', openArc); openArc()
+  var d = document.getElementById('arc')
+  function openArc() {
+    d.open = true
+    d.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+  document.querySelectorAll('a[href="#arc"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault()
+      if (location.hash !== '#arc') history.pushState(null, '', '#arc')
+      openArc()
+    })
+  })
+  window.addEventListener('hashchange', function () { if (location.hash === '#arc') openArc() })
+  if (location.hash === '#arc') openArc()
 })()
 </script>
 <script src="https://helenaflinn.com/subscribe-form.js" defer></script>
