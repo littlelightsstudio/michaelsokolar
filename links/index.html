@@ -258,6 +258,7 @@ footer a { color: var(--light); }
     <div class="ml-form-embedWrapper embedForm">
       <div class="ml-form-embedBody row-form" id="nl-ms-form">
         <form class="ml-block-form nl" action="https://helenaflinn.com/api/subscribe" method="post" data-subscribe data-hide="#nl-ms-form" data-success="#nl-ms-ok" data-error-class="fine">
+          <input type="hidden" name="source" value="links">
           <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
           <button type="submit">Subscribe</button>
         </form>
