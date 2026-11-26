@@ -680,6 +680,15 @@ nav.scrolled { border-bottom-color: var(--rule); }
   color: var(--near-black);
   font-weight: 400;
 }
+.about-text a {
+  color: var(--near-black);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.about-text a:hover { color: var(--accent); }
 
 
 /* ── CONTACT & NEWSLETTER ── */
@@ -926,6 +935,9 @@ footer {
       </p>
       <p class="about-text">
         The Helena Flinn Chronicles began as a short story about goblin dream engineers manufacturing dreams in a lab. The goblins came first. Then the city beneath Vienna. Then Helena. The world grew around them over years of writing.
+      </p>
+      <p class="about-text">
+        I wrote Book 3 in an app I built for myself: <span class="echo">Writing Grove</span>, one place for the whole novel, with its world beside the page. It's in testing now, and I'm looking for writers to try it. <a href="https://writinggrove.app/" target="_blank" rel="noopener">Become a tester&nbsp;&rarr;</a>
       </p>
       <div style="display:flex;gap:1.25rem;margin-top:1.5rem;margin-bottom:1.75rem">
         <a href="https://www.instagram.com/michael_sokolar_author/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram" style="color:var(--light);transition:color 0.2s;display:flex;align-items:center" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--light)'">
