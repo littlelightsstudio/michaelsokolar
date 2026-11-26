@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /impressum.html
-Disallow: /privacy.html
 
-Sitemap: https://www.michaelsokolar.com/sitemap.xml
+Sitemap: https://michaelsokolar.com/sitemap.xml

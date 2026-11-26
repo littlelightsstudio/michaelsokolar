@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Michael Sokolar — Author & Brand Film Director</title>
-  <meta name="description" content="Michael Sokolar — author of The Helena Flinn Chronicles and CEO of Little Lights Studio, a Vienna-based brand film agency. Middle-grade fantasy novelist by night, brand film director by day.">
+<title>Michael Sokolar · Author & Brand Film Director</title>
+  <meta name="description" content="Michael Sokolar, author of The Helena Flinn Chronicles and CEO of Little Lights Studio, a Vienna-based brand film agency. Middle-grade fantasy novelist by night, brand film director by day.">
   <meta name="keywords" content="Michael Sokolar, Helena Flinn Chronicles, middle grade fantasy author, Little Lights Studio, Vienna author, brand film director, children's fantasy books, miso sokolar">
   <meta name="author" content="Michael Sokolar">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://michaelsokolar.com/">
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Michael Sokolar">
-  <meta property="og:title" content="Michael Sokolar — Author & Brand Film Director">
+  <meta property="og:title" content="Michael Sokolar · Author & Brand Film Director">
   <meta property="og:description" content="Author of The Helena Flinn Chronicles and CEO of Little Lights Studio, Vienna. Middle-grade fantasy novelist by night, brand film director by day.">
   <meta property="og:url" content="https://michaelsokolar.com/">
-  <meta property="og:image" content="https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg">
+  <meta property="og:image" content="https://michaelsokolar.com/images/author/michael-sokolar-headshot-square.jpg">
   <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Michael Sokolar — Author & Brand Film Director">
+  <meta name="twitter:title" content="Michael Sokolar · Author & Brand Film Director">
   <meta name="twitter:description" content="Middle-grade fantasy author. Brand film director. Vienna.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg">
+  <meta name="twitter:image" content="https://michaelsokolar.com/images/author/michael-sokolar-headshot-square.jpg">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Michael Sokolar","url":"https://michaelsokolar.com","image":"https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg","sameAs":["https://helenaflinn.com","https://littlelights.studio","https://www.goodreads.com/book/show/220969289","https://www.instagram.com/michael_sokolar_author/","https://www.facebook.com/michaelsokolar.author/","https://www.linkedin.com/in/michaelsokolar/"],"jobTitle":"Author & CEO","worksFor":{"@type":"Organization","name":"Little Lights Studio GmbH","url":"https://littlelights.studio"},"address":{"@type":"PostalAddress","addressLocality":"Vienna","addressCountry":"AT"}}
+  {"@context":"https://schema.org","@type":"Person","name":"Michael Sokolar","url":"https://michaelsokolar.com","image":"https://raw.githubusercontent.com/littlelightsstudio/michaelsokolar/main/images/author/michael-sokolar-headshot-square.jpg","sameAs":["https://helenaflinn.com","https://littlelights.studio","https://www.goodreads.com/author/show/52282665.Michael_Sokolar","https://www.amazon.com/author/michaelsokolar","https://www.instagram.com/michael_sokolar_author/","https://www.facebook.com/michaelsokolar.author/","https://www.linkedin.com/in/michaelsokolar/"],"jobTitle":"Author & CEO","worksFor":{"@type":"Organization","name":"Little Lights Studio GmbH","url":"https://littlelights.studio"},"address":{"@type":"PostalAddress","addressLocality":"Vienna","addressCountry":"AT"}}
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -463,6 +463,10 @@ nav.scrolled { border-bottom-color: var(--rule); }
   position: relative;
 }
 .studio-block:hover { border-left-color: var(--near-black); }
+.grove-block { margin: 0 auto 2px; }
+.grove-block:hover { border-left-color: #d99632; }
+.grove-block .studio-logo { display: flex; justify-content: center; }
+.grove-block .studio-logo img { width: 76px; }
 
 .studio-logo {
   width: 140px;
@@ -786,6 +790,7 @@ footer {
   .book-covers { flex-wrap: wrap; gap: 1rem; justify-content: flex-start; }
   .book-thumb { width: 90px; }
   .studio-block { grid-template-columns: 1fr; gap: 1.5rem; }
+  .grove-block .studio-logo { justify-content: flex-start; }
   .studio-link { margin-top: 0.5rem; }
   .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .about-photo-wrap { position: static; }
@@ -875,6 +880,19 @@ footer {
         <div class="book-thumb-ph">Book 3<br>2026</div>
       </div>
     </div>
+  </div>
+
+  <!-- Writing Grove block — same layout as the studio block -->
+  <div class="studio-block grove-block reveal reveal-d2" id="grove">
+    <div class="studio-logo">
+      <img src="/images/brand/writing-grove-icon.svg" alt="Writing Grove" width="76" height="76" loading="lazy">
+    </div>
+    <div class="studio-text">
+      <p class="studio-tag">Writing App · In Testing</p>
+      <h3>Writing Grove</h3>
+      <p>Your novel and its whole world. I built it for myself and wrote Book 3 in it: the whole book in one place, with its world beside the page. For Mac, bought once, no subscription. I'm looking for writers to test it.</p>
+    </div>
+    <a href="https://writinggrove.app/" target="_blank" rel="noopener" class="studio-link">Become a tester →</a>
   </div>
 
   <!-- Little Lights block — dark, with logo -->
@@ -1136,22 +1154,6 @@ if(msForm) {
 
 </script>
 
-<!-- COOKIE NOTICE -->
-<div id="cookie-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(20,20,24,0.97);border-top:1px solid rgba(255,255,255,0.08);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;backdrop-filter:blur(8px)">
-  <p style="margin:0;font-family:'Outfit',sans-serif;font-size:0.72rem;font-weight:300;color:rgba(255,255,255,0.6);line-height:1.6;max-width:780px">This site uses Google Analytics 4 to collect anonymous usage statistics. No personal data is stored. <a href="/privacy.html" style="color:rgba(26,122,138,0.9);text-decoration:none;border-bottom:1px solid rgba(26,122,138,0.3)">Privacy policy</a></p>
-  <button onclick="dismissCookieBar()" style="flex-shrink:0;font-family:'Outfit',sans-serif;font-size:0.65rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);background:transparent;border:1px solid rgba(255,255,255,0.15);padding:0.5rem 1.1rem;cursor:pointer;transition:all 0.2s;white-space:nowrap" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(255,255,255,0.4)'" onmouseout="this.style.color='rgba(255,255,255,0.5)';this.style.borderColor='rgba(255,255,255,0.15)'">Got it</button>
-</div>
-<script>
-(function(){
-  if(!localStorage.getItem('ms_cookie_ok')){
-    document.getElementById('cookie-bar').style.display='flex';
-  }
-})();
-function dismissCookieBar(){
-  localStorage.setItem('ms_cookie_ok','1');
-  document.getElementById('cookie-bar').style.display='none';
-}
-</script>
 <script src="https://helenaflinn.com/subscribe-form.js" defer></script>
 </body>
 </html>
